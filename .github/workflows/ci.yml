@@ -55,18 +55,18 @@ jobs:
       - name: Django checks
         run: docker compose run --rm backend python manage.py check
 
-    frontend:
-      runs-on: ubuntu-latest
+  frontend:
+    runs-on: ubuntu-latest
 
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v4
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-        - name: Build frontend image
-          run: docker compose build frontend
+      - name: Build frontend image
+        run: docker compose build frontend
 
-        - name: Install dependencies
-          run: docker compose run --rm frontend npm install
+      - name: Install dependencies
+        run: docker compose run --rm frontend npm install
 
-        - name: Build frontend
-          run: docker compose run --rm frontend npm run build
+      - name: Build frontend
+        run: docker compose run --rm frontend npm run build
