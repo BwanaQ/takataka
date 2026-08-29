@@ -31,3 +31,7 @@ data/snapshots/*
 !data/processed/.gitkeep
 !data/uploads/.gitkeep
 !data/snapshots/.gitkeep
+
+# large raw data — fetch is scripted, see docs/data/conventions.md
+data/raw/osm-kenya-geofabrik/
+*.osm.pbf
