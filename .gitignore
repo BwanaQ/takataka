@@ -11,3 +11,23 @@ dist/
 coverage/
 .pytest_cache/
 .DS_Store
+# Environment
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Data
+data/raw/*
+data/processed/*
+data/uploads/*
+data/snapshots/*
+
+# Keep data directory structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/uploads/.gitkeep
+!data/snapshots/.gitkeep
